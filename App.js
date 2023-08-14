@@ -1,20 +1,94 @@
-import { StatusBar } from 'expo-status-bar';
+// Desc: file chính của ứng dụng Gojek
 import { StyleSheet, Text, View } from 'react-native';
+import {Home, DonHang, HopThu, UuDai} from "./src/view/index.js";
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { MaterialIcons } from '@expo/vector-icons';
+import {Entypo,AntDesign,FontAwesome5} from '@expo/vector-icons';
+
+const Tab = createBottomTabNavigator()
+const screenOptions = {
+  headerShown: false,
+  tabBarShowLabel: false,
+  tabBarStyle: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    left: 0,
+    elevation: 0,
+    height: 60,
+    backgroundColor: 'white',
+    paddingTop: 10,
+  }
+}
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator screenOptions={screenOptions} >
+        {/* Screen Trang Chủ */}
+        <Tab.Screen 
+        name="Home" 
+        component={Home}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return (
+              <View style={{alignItems:'center',justifyContent:'center'}}>
+              <Entypo name="home" size={24} color={ focused ? "red" : "#88b77b"}/>
+              <Text style={{fontSize:12,color:'#16247d'}}>Trang Chủ</Text>
+            </View>
+            )
+          }
+        }}
+        />
+        {/* Screen Ưu Đãi */}
+        <Tab.Screen 
+        name="UuDai" 
+        component={UuDai}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return (
+              <View style={{alignItems:'center',justifyContent:'center'}}>
+             <AntDesign name="gift" size={24} color={ focused ? "red" : "#88b77b"} />
+              <Text style={{fontSize:12,color:'#16247d'}}>Ưu Đãi</Text>
+            </View>
+            )
+          }
+        }}/>
+
+        {/* Screen Đơn Hàng */}
+         <Tab.Screen 
+        name="DonHang" 
+        component={DonHang}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return (
+              <View style={{alignItems:'center',justifyContent:'center'}}>
+              <FontAwesome5 name="clipboard-list" size={24} color={ focused ? "red" : "#88b77b"} />
+              <Text style={{fontSize:12,color:'#16247d'}}>Đơn Hàng</Text>
+            </View>
+            )
+          }
+        }}/>
+
+        {/* Screen Hộp Thư */}
+        <Tab.Screen 
+        name="HopThu" 
+        component={HopThu}
+        options={{
+          tabBarIcon: ({focused}) => {
+            return (
+              <View style={{alignItems:'center',justifyContent:'center'}}>
+              <MaterialIcons name="message" size={24} color={ focused ? "red" : "#88b77b"}/>
+              <Text style={{fontSize:12,color:'#16247d'}}>Hộp Thư</Text>
+            </View>
+            )
+          }
+        }}/>
+       
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
