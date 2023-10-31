@@ -1,12 +1,16 @@
 // Desc: file chính của ứng dụng Gojek
 import { StyleSheet, Text, View } from 'react-native';
-import {Home, DonHang, HopThu, UuDai} from "./src/view/index.js";
+import {Home, DonHang, HopThu, UuDai,TaiKhoan} from "./src/view/index.js";
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { MaterialIcons } from '@expo/vector-icons';
 import {Entypo,AntDesign,FontAwesome5} from '@expo/vector-icons';
 
 const Tab = createBottomTabNavigator()
+const Stack = createNativeStackNavigator();
+
+
 const screenOptions = {
   headerShown: false,
   tabBarShowLabel: false,
@@ -16,7 +20,7 @@ const screenOptions = {
     right: 0,
     left: 0,
     elevation: 0,
-    height: 60,
+    height: 70,
     backgroundColor: 'white',
     paddingTop: 10,
   }
@@ -29,12 +33,12 @@ export default function App() {
         {/* Screen Trang Chủ */}
         <Tab.Screen 
         name="Home" 
-        component={Home}
+        component={StackHome}
         options={{
           tabBarIcon: ({focused}) => {
             return (
               <View style={{alignItems:'center',justifyContent:'center'}}>
-              <Entypo name="home" size={24} color={ focused ? "red" : "#88b77b"}/>
+              <Entypo name="home" size={24} color={ focused ? "#88b77b" : "black"}/>
               <Text style={{fontSize:12,color:'#16247d'}}>Trang Chủ</Text>
             </View>
             )
@@ -49,7 +53,7 @@ export default function App() {
           tabBarIcon: ({focused}) => {
             return (
               <View style={{alignItems:'center',justifyContent:'center'}}>
-             <AntDesign name="gift" size={24} color={ focused ? "red" : "#88b77b"} />
+             <AntDesign name="gift" size={24} color={ focused ? "#88b77b" : "black"} />
               <Text style={{fontSize:12,color:'#16247d'}}>Ưu Đãi</Text>
             </View>
             )
@@ -64,7 +68,7 @@ export default function App() {
           tabBarIcon: ({focused}) => {
             return (
               <View style={{alignItems:'center',justifyContent:'center'}}>
-              <FontAwesome5 name="clipboard-list" size={24} color={ focused ? "red" : "#88b77b"} />
+              <FontAwesome5 name="clipboard-list" size={24} color={ focused ? "#88b77b" : "black"} />
               <Text style={{fontSize:12,color:'#16247d'}}>Đơn Hàng</Text>
             </View>
             )
@@ -79,7 +83,7 @@ export default function App() {
           tabBarIcon: ({focused}) => {
             return (
               <View style={{alignItems:'center',justifyContent:'center'}}>
-              <MaterialIcons name="message" size={24} color={ focused ? "red" : "#88b77b"}/>
+              <MaterialIcons name="message" size={24} color={ focused ? "#88b77b" : "black"}/>
               <Text style={{fontSize:12,color:'#16247d'}}>Hộp Thư</Text>
             </View>
             )
@@ -89,6 +93,17 @@ export default function App() {
       </Tab.Navigator>
     </NavigationContainer>
   );
+}
+
+function StackHome() {
+  return (
+    
+      <Stack.Navigator>
+        <Stack.Screen name="Trang Chủ" component={Home} options={{ headerShown: false }}/>
+        <Stack.Screen name="Thông Tin Tài Khoản" component={TaiKhoan}/>
+      </Stack.Navigator>
+    
+  )
 }
 
 
