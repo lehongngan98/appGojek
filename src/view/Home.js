@@ -89,7 +89,7 @@ export default function Home({navigation}) {
   const [isRender,setisRender] = useState(false) ;  
   return (
     
-    <SafeAreaView style={{flex:1 ,flexDirection:'column'}}>
+    <SafeAreaView style={{flex:1 ,flexDirection:'column',backgroundColor:'white'}}>
       
       <StatusBar barStyle='dark-content'/>
       {/* Component Header */}
@@ -121,7 +121,9 @@ export default function Home({navigation}) {
           {/* Component service */}
           <View style={{height:100,width:'100%',flexDirection:'row',padding:10,justifyContent:'space-between'}}>
               {/* Image goride */}
-              <TouchableOpacity style={{width:'20%',height:'70%'}}>
+              <TouchableOpacity style={{width:'20%',height:'70%'}}
+                onPress={() => navigation.navigate('Gojek')}
+              >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
                   <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/bike.png')}/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoBike</Text>
@@ -129,7 +131,9 @@ export default function Home({navigation}) {
               </TouchableOpacity>
 
                {/* Image gocar */}
-               <TouchableOpacity style={{width:'20%',height:'70%'}}>
+               <TouchableOpacity style={{width:'20%',height:'70%'}}
+                onPress={() => navigation.navigate('Gocar')}
+               >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
                   <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/car.png')}/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoCar</Text>
@@ -138,7 +142,9 @@ export default function Home({navigation}) {
                
 
                {/* Image gofood */}
-               <TouchableOpacity style={{width:'20%',height:'70%'}}>
+               <TouchableOpacity style={{width:'20%',height:'70%'}}
+                onPress={() => navigation.navigate('Gofood')}
+               >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
                   <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/menu.png')}/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoFood</Text>
@@ -146,7 +152,9 @@ export default function Home({navigation}) {
                </TouchableOpacity>
 
                {/* Image gosend */}
-               <TouchableOpacity style={{width:'20%',height:'70%'}}>
+               <TouchableOpacity style={{width:'20%',height:'70%'}}
+                onPress={() => navigation.navigate('Gosend')}
+               >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
                   <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/gosend.png')}/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoSend</Text>

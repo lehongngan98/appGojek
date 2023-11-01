@@ -1,6 +1,6 @@
 // Desc: file chính của ứng dụng Gojek
 import { StyleSheet, Text, View } from 'react-native';
-import {Home, DonHang, HopThu, UuDai,TaiKhoan} from "./src/view/index.js";
+import {Home, DonHang, HopThu, UuDai,TaiKhoan,DatGojek,Gocar,Gofood,Gosend} from "./src/view/index.js";
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -101,6 +101,11 @@ function StackHome() {
       <Stack.Navigator>
         <Stack.Screen name="Trang Chủ" component={Home} options={{ headerShown: false }}/>
         <Stack.Screen name="Thông Tin Tài Khoản" component={TaiKhoan}/>
+        <Stack.Screen name="Gojek" component={DatGojek}/>
+        <Stack.Screen name="Gocar" component={Gocar}/>
+        <Stack.Screen name="Gofood" component={Gofood}/>
+        <Stack.Screen name="Gosend" component={Gosend}/>
+        
       </Stack.Navigator>
     
   )
