@@ -26,7 +26,7 @@ const TaiKhoan = () => {
                 <Text style={{fontSize:20,fontWeight:500}}>Tài Khoản</Text>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <FontAwesome5 name="clipboard-list" size={24} color={ "black"} />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Đơn Hàng</Text>
@@ -37,7 +37,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
             <AntDesign name="gift" size={24} color={"black"} />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Ưu đãi</Text>
@@ -47,7 +47,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
             <FontAwesome name="credit-card" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Phương thức thanh toán</Text>
@@ -57,7 +57,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <Entypo name="help-with-circle" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Trợ giúp & yêu cầu hổ trợ</Text>
@@ -67,7 +67,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <MaterialIcons name="language" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Thay đổi ngôn ngữ</Text>
@@ -77,7 +77,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <Entypo name="location" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Địa điểm quen thuộc</Text>
@@ -87,7 +87,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <Ionicons name="people" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Giới thiệu bạn bè</Text>
@@ -97,7 +97,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <Ionicons name="notifications" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Thông báo</Text>
@@ -107,7 +107,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <MaterialIcons name="security" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Bảo mật tài khoản</Text>
@@ -120,7 +120,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <Ionicons name="settings" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Quản lý tài khoản</Text>
@@ -135,7 +135,7 @@ const TaiKhoan = () => {
         </View>
 
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
             <FontAwesome5 name="clipboard-list" size={24} color={ "black"} />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Quy chế</Text>
@@ -145,7 +145,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <FontAwesome5 name="clipboard-list" size={24} color={ "black"} />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Chính sách bảo mật</Text>
@@ -155,7 +155,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <FontAwesome5 name="clipboard-list" size={24} color={ "black"} />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Điều khoản dịch vụ</Text>
@@ -165,7 +165,7 @@ const TaiKhoan = () => {
             </View>
         </View>
 
-        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:0.2}}>
+        <View style={{marginTop:10,width:'100%',height:50,justifyContent:'space-between',flexDirection:'row',borderBottomWidth:1}}>
             <View style={{flexDirection:'row',alignItems:'center'}}>
                 <AntDesign name="star" size={24} color="black" />
                 <Text style={{marginLeft:10,fontSize:16,fontWeight:700}}>Đánh giá ứng dụng Gojek</Text>

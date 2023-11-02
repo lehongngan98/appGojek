@@ -277,7 +277,7 @@ export default function Home({navigation}) {
           {/* <View style={{height:70,width:'100%'}}/> */}
         </ScrollView>
       </View>
-
+      <View style={{width:'100%',height:200}}/>
 
     </SafeAreaView>
     

@@ -10,8 +10,8 @@ export default function UuDai() {
       <StatusBar style='light'/>
       {/* Component Header */}
       
-      <View style={{height:'8%',width:'100%',borderBottomWidth:0.2,justifyContent:'center'}}>
-        <Text style={{fontSize:30,marginLeft:20,fontWeight:600}}>Ưu đãi</Text>
+      <View style={{height:'5%',width:'100%',borderBottomWidth:1,justifyContent:'center'}}>
+        <Text style={{fontSize:24,marginLeft:20,fontWeight:600}}>Ưu đãi</Text>
       </View>
       <ScrollView>
         <View style={{width:'100%',height:100,marginTop:20,flexDirection:'row',justifyContent:'space-around'}}>
@@ -64,7 +64,7 @@ export default function UuDai() {
             </View>
         </View>
 
-        <View style={{width:'90%',height:40,marginTop:20,marginLeft:20,flexDirection:'row',alignItems:'center',justifyContent:'space-between',borderWidth:0.2,borderRadius:60,backgroundColor:'white'}}>
+        <View style={{width:'90%',height:40,marginTop:20,marginLeft:20,flexDirection:'row',alignItems:'center',justifyContent:'space-between',borderWidth:1,borderRadius:60,backgroundColor:'white'}}>
             <View style={{flexDirection:'row',alignItems:'center',marginLeft:10}}>
             <AntDesign name="gift" size={24} color={ "orange"} />
             <Text style={{marginLeft:10,fontWeight:500,fontSize:16}}>Bạn có mã khuyến mãi?</Text>
@@ -73,19 +73,19 @@ export default function UuDai() {
         </View>
 
         
-        <Text style={{fontSize:30,fontWeight:500,marginTop:30,marginLeft:20}}>Ưu đãi hot phải đặt ngay</Text>
+        <Text style={{fontSize:24,fontWeight:500,marginTop:30,marginLeft:20}}>Ưu đãi hot phải đặt ngay</Text>
         
         <View style={{width:'100%',height:50,marginTop:20,flexDirection:'row',justifyContent:'space-around'}}>
-            <View style={{width:80,height:50,justifyContent:'center',alignItems:'center',borderRadius:30,borderWidth:0.2,backgroundColor:'white'}}>
+            <View style={{width:80,height:40,justifyContent:'center',alignItems:'center',borderRadius:30,backgroundColor:'#ddd'}}>
                 <Text style={{fontSize:16,fontWeight:500}}>GoCar</Text>
             </View>
-            <View style={{width:80,height:50,justifyContent:'center',alignItems:'center',borderRadius:30,borderWidth:0.2,backgroundColor:'white'}}>
+            <View style={{width:80,height:40,justifyContent:'center',alignItems:'center',borderRadius:30,backgroundColor:'#ddd'}}>
                 <Text style={{fontSize:16,fontWeight:500}}>GoFood</Text>
             </View>
-            <View style={{width:80,height:50,justifyContent:'center',alignItems:'center',borderRadius:30,borderWidth:0.2,backgroundColor:'white'}}>
+            <View style={{width:80,height:40,justifyContent:'center',alignItems:'center',borderRadius:30,backgroundColor:'#ddd'}}>
                 <Text style={{fontSize:16,fontWeight:500}}>GoRide</Text>
             </View>
-            <View style={{width:80,height:50,justifyContent:'center',alignItems:'center',borderRadius:30,borderWidth:0.2,backgroundColor:'white'}}>
+            <View style={{width:80,height:40,justifyContent:'center',alignItems:'center',borderRadius:30,backgroundColor:'#ddd'}}>
                 <Text style={{fontSize:16,fontWeight:500}}>GoSend</Text>
             </View>
         </View>
@@ -94,9 +94,9 @@ export default function UuDai() {
         
         <View style={{marginTop:30,justifyContent:'center',alignItems:'center'}}>
             <Image source={require('../image/uudai1.png')} style={{width:'90%',height:200}} resizeMode='contain'/>
-            <Image source={require('../image/uudai2.png')} style={{width:'90%',height:200,marginTop:20}} resizeMode='contain'/>
-            <Image source={require('../image/gojek3.png')} style={{width:'90%',height:200,marginTop:20}} resizeMode='contain'/>
-            <Image source={require('../image/gojek4.png')} style={{width:'90%',height:200,marginTop:20}} resizeMode='contain'/>
+            <Image source={require('../image/uudai2.png')} style={{width:'90%',height:200}} resizeMode='contain'/>
+            <Image source={require('../image/gojek3.png')} style={{width:'90%',height:200}} resizeMode='contain'/>
+            <Image source={require('../image/gojek4.png')} style={{width:'90%',height:200}} resizeMode='contain'/>
 
         </View>
 
