@@ -87,6 +87,10 @@ export default function Home({navigation}) {
   const [dataFood,setDataFood] = useState(flatListImgFood);
   const [dataSend,setDataSend] = useState(flatListImgSend);
   const [isRender,setisRender] = useState(false) ;  
+
+
+  
+
   return (
     
     <SafeAreaView style={{flex:1 ,flexDirection:'column',backgroundColor:'white'}}>
@@ -125,7 +129,7 @@ export default function Home({navigation}) {
                 onPress={() => navigation.navigate('Gojek')}
               >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
-                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/bike.png')}/>
+                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/bike.png')} resizeMode='contain'/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoBike</Text>
                 </View>
               </TouchableOpacity>
@@ -135,7 +139,7 @@ export default function Home({navigation}) {
                 onPress={() => navigation.navigate('Gocar')}
                >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
-                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/car.png')}/>
+                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/car.png')}resizeMode='contain'/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoCar</Text>
                 </View>
                </TouchableOpacity>
@@ -146,7 +150,7 @@ export default function Home({navigation}) {
                 onPress={() => navigation.navigate('Gofood')}
                >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
-                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/menu.png')}/>
+                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/menu.png')}resizeMode='contain'/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoFood</Text>
                 </View>
                </TouchableOpacity>
@@ -156,7 +160,7 @@ export default function Home({navigation}) {
                 onPress={() => navigation.navigate('Gosend')}
                >
                 <View style={{width:'100%',height:'100%',justifyContent:'center',alignItems:'center',padding:5}}>
-                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/gosend.png')}/>
+                  <Image style={{width:'100%',height:'100%',marginTop:20}} source={require('../image/gosend.png')}resizeMode='contain'/>
                   <Text style={{fontSize:15,fontWeight:'600'}}>GoSend</Text>
                 </View>
                </TouchableOpacity>
