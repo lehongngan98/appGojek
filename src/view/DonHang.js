@@ -7,7 +7,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 function LichSu() {
     return (
       <View style={{ flex: 1 ,flexDirection:'row',backgroundColor:'white'}}>
-        <View style={{width:100,height:40,backgroundColor:'#eee',borderWidth:1,borderRadius:50,justifyContent:'center',alignItems:'center',marginLeft:20,marginTop:20}}>
+        <View style={{width:100,height:40,backgroundColor:'#eee',borderWidth:1,borderRadius:50,justifyContent:'center',alignItems:'center',marginLeft:20,marginTop:20,borderColor:'gray'}}>
             <Text style={{fontSize:20,fontWeight:500}}>Lịch sử</Text>    
         </View>  
         <View style={{width:150,height:40,backgroundColor:'#eee',borderWidth:1,borderRadius:50,justifyContent:'space-evenly',alignItems:'center',flexDirection:'row',marginLeft:20,marginTop:20}}>

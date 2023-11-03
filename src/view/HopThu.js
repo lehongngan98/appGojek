@@ -6,7 +6,7 @@ export default function HopThu() {
     <SafeAreaView style={{flex:1 ,flexDirection:'column',backgroundColor:'white'}}>
       <StatusBar style='light'/>
       {/* Component Header */}
-      <View style={{height:'5%',width:'100%',borderBottomWidth:1,justifyContent:'center'}}>
+      <View style={{height:'5%',width:'100%',borderBottomWidth:1,justifyContent:'center',borderColor:'gray'}}>
         <Text style={{fontSize:24,marginLeft:20,fontWeight:600}}>Hộp thư</Text>
       </View>
 

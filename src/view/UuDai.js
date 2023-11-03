@@ -10,7 +10,7 @@ export default function UuDai() {
       <StatusBar style='light'/>
       {/* Component Header */}
       
-      <View style={{height:'5%',width:'100%',borderBottomWidth:1,justifyContent:'center'}}>
+      <View style={{height:'5%',width:'100%',borderBottomWidth:1,justifyContent:'center',borderColor:'gray'}}>
         <Text style={{fontSize:24,marginLeft:20,fontWeight:600}}>Ưu đãi</Text>
       </View>
       <ScrollView>
@@ -64,7 +64,7 @@ export default function UuDai() {
             </View>
         </View>
 
-        <View style={{width:'90%',height:40,marginTop:20,marginLeft:20,flexDirection:'row',alignItems:'center',justifyContent:'space-between',borderWidth:1,borderRadius:60,backgroundColor:'white'}}>
+        <View style={{width:'90%',height:40,marginTop:20,marginLeft:20,flexDirection:'row',alignItems:'center',justifyContent:'space-between',borderWidth:1,borderRadius:60,borderColor:'gray'}}>
             <View style={{flexDirection:'row',alignItems:'center',marginLeft:10}}>
             <AntDesign name="gift" size={24} color={ "orange"} />
             <Text style={{marginLeft:10,fontWeight:500,fontSize:16}}>Bạn có mã khuyến mãi?</Text>
